@@ -4,7 +4,7 @@
 		module="sparktest_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20160828184930"
+		publication="20160828220322"
 	>
 		<description>
 		SparkTest
@@ -34,7 +34,7 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.4" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.10.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
-		<dependency org="org.apache.spark" name="spark-core_2.10" rev="1.6.1" conf="compile->default(compile)">
+		<dependency org="org.apache.spark" name="spark-core_2.10" rev="2.0.0" conf="compile->default(compile)">
 			<exclude org="org.apache.hadoop" module="hadoop-yarn-server-web-proxy" name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
 	</dependencies>
