@@ -10,6 +10,7 @@ object SparkGraphFrames {
     val spark = SparkSession.builder
       .master("local")
       .appName("Spark Graph Frames")
+      .config("spark.sql.warehouse.dir","../")
       .getOrCreate()
 
     val v = spark.createDataFrame(List(
