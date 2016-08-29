@@ -1,4 +1,4 @@
-[info] Updating {file:/C:/Users/Volodymyr%20Miz/IdeaProjects/SparkTest/project/}sparktest-build...
+[info] Updating {file:/home/volodymyrmiz/IdeaProjects/SparkTest/project/}sparktest-build...
 [debug] :: resolving dependencies :: default#sparktest-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -16,7 +16,7 @@
 [debug] == resolving dependencies for default#sparktest-build;0.1-SNAPSHOT [provided]
 [debug] == resolving dependencies default#sparktest-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@16c88df3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7958ddc1
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
 [debug] 	[2.10.4] org.scala-lang#scala-library;2.10.4
@@ -1766,19 +1766,19 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 14114ms :: artifacts dl 10158ms
-[debug] 	report for default#sparktest-build;0.1-SNAPSHOT compile produced in C:\Users\Volodymyr Miz\IdeaProjects\SparkTest\project\target\resolution-cache\reports\default-sparktest-build-compile.xml
-[debug] 	report for default#sparktest-build;0.1-SNAPSHOT runtime produced in C:\Users\Volodymyr Miz\IdeaProjects\SparkTest\project\target\resolution-cache\reports\default-sparktest-build-runtime.xml
-[debug] 	report for default#sparktest-build;0.1-SNAPSHOT test produced in C:\Users\Volodymyr Miz\IdeaProjects\SparkTest\project\target\resolution-cache\reports\default-sparktest-build-test.xml
-[debug] 	report for default#sparktest-build;0.1-SNAPSHOT provided produced in C:\Users\Volodymyr Miz\IdeaProjects\SparkTest\project\target\resolution-cache\reports\default-sparktest-build-provided.xml
-[debug] 	report for default#sparktest-build;0.1-SNAPSHOT optional produced in C:\Users\Volodymyr Miz\IdeaProjects\SparkTest\project\target\resolution-cache\reports\default-sparktest-build-optional.xml
-[debug] 	report for default#sparktest-build;0.1-SNAPSHOT compile-internal produced in C:\Users\Volodymyr Miz\IdeaProjects\SparkTest\project\target\resolution-cache\reports\default-sparktest-build-compile-internal.xml
-[debug] 	report for default#sparktest-build;0.1-SNAPSHOT runtime-internal produced in C:\Users\Volodymyr Miz\IdeaProjects\SparkTest\project\target\resolution-cache\reports\default-sparktest-build-runtime-internal.xml
-[debug] 	report for default#sparktest-build;0.1-SNAPSHOT test-internal produced in C:\Users\Volodymyr Miz\IdeaProjects\SparkTest\project\target\resolution-cache\reports\default-sparktest-build-test-internal.xml
-[debug] 	report for default#sparktest-build;0.1-SNAPSHOT plugin produced in C:\Users\Volodymyr Miz\IdeaProjects\SparkTest\project\target\resolution-cache\reports\default-sparktest-build-plugin.xml
-[debug] 	report for default#sparktest-build;0.1-SNAPSHOT sources produced in C:\Users\Volodymyr Miz\IdeaProjects\SparkTest\project\target\resolution-cache\reports\default-sparktest-build-sources.xml
-[debug] 	report for default#sparktest-build;0.1-SNAPSHOT docs produced in C:\Users\Volodymyr Miz\IdeaProjects\SparkTest\project\target\resolution-cache\reports\default-sparktest-build-docs.xml
-[debug] 	report for default#sparktest-build;0.1-SNAPSHOT pom produced in C:\Users\Volodymyr Miz\IdeaProjects\SparkTest\project\target\resolution-cache\reports\default-sparktest-build-pom.xml
-[debug] 	report for default#sparktest-build;0.1-SNAPSHOT scala-tool produced in C:\Users\Volodymyr Miz\IdeaProjects\SparkTest\project\target\resolution-cache\reports\default-sparktest-build-scala-tool.xml
-[debug] 	resolve done (14114ms resolve - 10158ms download)
+[debug] :: resolution report :: resolve 643ms :: artifacts dl 20ms
+[debug] 	report for default#sparktest-build;0.1-SNAPSHOT compile produced in /home/volodymyrmiz/IdeaProjects/SparkTest/project/target/resolution-cache/reports/default-sparktest-build-compile.xml
+[debug] 	report for default#sparktest-build;0.1-SNAPSHOT runtime produced in /home/volodymyrmiz/IdeaProjects/SparkTest/project/target/resolution-cache/reports/default-sparktest-build-runtime.xml
+[debug] 	report for default#sparktest-build;0.1-SNAPSHOT test produced in /home/volodymyrmiz/IdeaProjects/SparkTest/project/target/resolution-cache/reports/default-sparktest-build-test.xml
+[debug] 	report for default#sparktest-build;0.1-SNAPSHOT provided produced in /home/volodymyrmiz/IdeaProjects/SparkTest/project/target/resolution-cache/reports/default-sparktest-build-provided.xml
+[debug] 	report for default#sparktest-build;0.1-SNAPSHOT optional produced in /home/volodymyrmiz/IdeaProjects/SparkTest/project/target/resolution-cache/reports/default-sparktest-build-optional.xml
+[debug] 	report for default#sparktest-build;0.1-SNAPSHOT compile-internal produced in /home/volodymyrmiz/IdeaProjects/SparkTest/project/target/resolution-cache/reports/default-sparktest-build-compile-internal.xml
+[debug] 	report for default#sparktest-build;0.1-SNAPSHOT runtime-internal produced in /home/volodymyrmiz/IdeaProjects/SparkTest/project/target/resolution-cache/reports/default-sparktest-build-runtime-internal.xml
+[debug] 	report for default#sparktest-build;0.1-SNAPSHOT test-internal produced in /home/volodymyrmiz/IdeaProjects/SparkTest/project/target/resolution-cache/reports/default-sparktest-build-test-internal.xml
+[debug] 	report for default#sparktest-build;0.1-SNAPSHOT plugin produced in /home/volodymyrmiz/IdeaProjects/SparkTest/project/target/resolution-cache/reports/default-sparktest-build-plugin.xml
+[debug] 	report for default#sparktest-build;0.1-SNAPSHOT sources produced in /home/volodymyrmiz/IdeaProjects/SparkTest/project/target/resolution-cache/reports/default-sparktest-build-sources.xml
+[debug] 	report for default#sparktest-build;0.1-SNAPSHOT docs produced in /home/volodymyrmiz/IdeaProjects/SparkTest/project/target/resolution-cache/reports/default-sparktest-build-docs.xml
+[debug] 	report for default#sparktest-build;0.1-SNAPSHOT pom produced in /home/volodymyrmiz/IdeaProjects/SparkTest/project/target/resolution-cache/reports/default-sparktest-build-pom.xml
+[debug] 	report for default#sparktest-build;0.1-SNAPSHOT scala-tool produced in /home/volodymyrmiz/IdeaProjects/SparkTest/project/target/resolution-cache/reports/default-sparktest-build-scala-tool.xml
+[debug] 	resolve done (643ms resolve - 20ms download)
 [info] Done updating.

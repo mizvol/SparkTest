@@ -1,15 +1,13 @@
-import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.log4j.Logger
-import org.apache.log4j.Level
-import org.graphframes._
-import org.graphframes.GraphFrame
 import org.apache.spark.sql.SparkSession
+import org.graphframes.GraphFrame
+import org.miz.helper.Helper._
 
 object SparkGraphFrames {
   def main(args: Array[String]): Unit = {
 
-    val spark = SparkSession
-      .builder()
+    suppressLogs(List("org", "akka"))
+
+    val spark = SparkSession.builder
       .master("local")
       .appName("Spark Graph Frames")
       .getOrCreate()
@@ -19,14 +17,15 @@ object SparkGraphFrames {
       ("b", "Bob", 36),
       ("c", "Charlie", 30)
     )).toDF("id", "name", "age")
+
     // Create an Edge DataFrame with "src" and "dst" columns
     val e = spark.createDataFrame(List(
       ("a", "b", "friend"),
       ("b", "c", "follow"),
       ("c", "b", "follow")
     )).toDF("src", "dst", "relationship")
-    // Create a GraphFrame
 
+    // Create a GraphFrame
     val g = GraphFrame(v, e)
 
     // Query: Get in-degree of each vertex.
@@ -44,17 +43,14 @@ object SparkGraphFrames {
 object SparkWordCount {
   def main(args: Array[String]): Unit = {
 
-    Logger.getLogger("org").setLevel(Level.OFF)
-    Logger.getLogger("akka").setLevel(Level.OFF)
+    suppressLogs(List("org", "akka"))
 
-    val conf = new SparkConf()
-      .setAppName("SparkWordCount")
-      .setMaster("local[*]")
-      .set("spark.executor.memory", "2g")
+    val spark = SparkSession.builder
+      .master("local")
+      .appName("Spark Graph Frames")
+      .getOrCreate()
 
-    val sc = new SparkContext(conf)
-
-    val lines = sc.parallelize(Seq("This is the first line", "This is the second line", "This is the third line"))
+    val lines = spark.sparkContext.parallelize(Seq("This is the first line", "This is the second line", "This is the third line"))
 
     val counts = lines.flatMap(line => line.split(" "))
       .map(word => (word, 1))
